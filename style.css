@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 상 오 하 왼 */
+    margin: 0px 0px 0px 16px;
+    padding: 0px;
+    list-style: none;
+}
+/* header */
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+}
+.header-menu-item{
+    padding: 16px;
+}
+.header-btn-box{
+    float: right;
+}
+
+
+.mainback{
+    background-image: 'https://www.modusign.co.kr/image/back/back-main.jpg';
+}
