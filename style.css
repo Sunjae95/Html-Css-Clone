@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px; 
+    color:#7c8082;
 }
 
 ul {
@@ -8,7 +9,7 @@ ul {
     justify-content: center;
     align-items: center;
     /* 상 오 하 왼 */
-    margin: 0px 0px 0px 16px;
+    /* margin: 0px 0px 0px 16px; */
     padding: 0px;
     list-style: none;
 }
@@ -17,7 +18,7 @@ a{
     color:#7c8082;
 }
 
-.header{
+header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +48,22 @@ a{
 }
 .header-menu-item{
     padding: 16px;
+    font-size: 14px;
 }
 
+.header-menu-item:hover{
+    color:#0076C0;
+    border-bottom: 2px solid #0076C0;
+}
+
+/* banner */
+.banner {
+    height: 480px;
+    background-repeat: no-repeat ;
+    background-image: url('https://d2gd6pc034wcta.cloudfront.net/contest/42/e04ed392bc207f9f89d461842d85aa8006b607b1.jpg');
+    background-size: 100% 100%;
+    /* 사진의 초점이 어디인지 정해주고 길이가짧은곳에 맞춤 */
+    background-position: center;
+    background-size: cover;
+}
 
