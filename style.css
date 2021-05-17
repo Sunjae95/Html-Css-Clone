@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px; 
     color:#7c8082;
+    text-align: center;
 }
 
 /* 공통사용 */
@@ -84,6 +85,34 @@ header{
     padding: 50px;
     box-sizing: border-box;
 }
-.section-text-item{
-    text-align: center;
+
+/* section - info */
+.section-info{
+    padding: 60px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+.info-group{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.info-group-item{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.info-group-text {
+    border: solid 1px #555;
+}
+.info-count{
+    font-size: 42px;
+    line-height: 48px;
+    color: #fff;
+}
+.info-count-title{
+    color: #bbb;
+    font-size: 16px;
 }
