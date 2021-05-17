@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
 }
 
 ul {
@@ -12,21 +12,41 @@ ul {
     padding: 0px;
     list-style: none;
 }
-/* header */
-.header-container{
+a{
+    text-decoration: none;
+    color:#7c8082;
+}
+
+.header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 16px;
+    flex-direction: column;
+}
+.container{
+    width: 1170px;
+}
+
+/* header - login*/
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+}
+.loginbar-item{
+    padding: 16px 8px;
+    font-size: 11px;
+}
+
+/* header - menu */
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: 60px;
 }
 .header-menu-item{
     padding: 16px;
 }
-.header-btn-box{
-    float: right;
-}
 
 
-.mainback{
-    background-image: 'https://www.modusign.co.kr/image/back/back-main.jpg';
-}
