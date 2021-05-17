@@ -4,12 +4,11 @@ body{
     color:#7c8082;
 }
 
+/* 공통사용 */
 ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 상 오 하 왼 */
-    /* margin: 0px 0px 0px 16px; */
     padding: 0px;
     list-style: none;
 }
@@ -17,15 +16,16 @@ a{
     text-decoration: none;
     color:#7c8082;
 }
+.container{
+    width: 1170px;
+}
 
+/* header */
 header{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.container{
-    width: 1170px;
 }
 
 /* header - login*/
@@ -34,36 +34,56 @@ header{
     justify-content: flex-end;
 }
 .loginbar-item{
-    padding: 16px 8px;
+    padding: 8px 8px;
     font-size: 11px;
+}
+.loginbar-item a:hover{
+    border-bottom: 1px solid #7c8082;
 }
 
 /* header - menu */
 .navbar{
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 .logo{
     height: 60px;
 }
+.header-menu{
+    margin-bottom: 0px;
+}
 .header-menu-item{
+    align-self: flex-end;
     padding: 16px;
     font-size: 14px;
+    border-bottom: 2px solid white;
 }
-
 .header-menu-item:hover{
+    cursor: pointer;
     color:#0076C0;
     border-bottom: 2px solid #0076C0;
 }
 
-/* banner */
-.banner {
+
+
+/* section - banner */
+.section-banner {
+    width: 100%;
     height: 480px;
     background-repeat: no-repeat ;
     background-image: url('https://d2gd6pc034wcta.cloudfront.net/contest/42/e04ed392bc207f9f89d461842d85aa8006b607b1.jpg');
-    background-size: 100% 100%;
     /* 사진의 초점이 어디인지 정해주고 길이가짧은곳에 맞춤 */
+    background-size: 100% 100%;
     background-position: center;
     background-size: cover;
 }
 
+/* section - text */
+.section-text{
+    padding: 50px;
+    box-sizing: border-box;
+}
+.section-text-item{
+    text-align: center;
+}
