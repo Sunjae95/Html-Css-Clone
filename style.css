@@ -1,32 +1,193 @@
 body{
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
+    color:#7c8082;
+    text-align: center;
 }
 
+/* 반응형 웹 */
+@media (max-width: 767px){
+    .container{
+        width: 480px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        width: 1024px;
+    }
+}
+@media (max-width: 824px ){
+
+}    
+/* 공통사용 */
 ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 상 오 하 왼 */
-    margin: 0px 0px 0px 16px;
     padding: 0px;
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color:#7c8082;
+}
+
+
 /* header */
-.header-container{
+header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 16px;
-}
-.header-menu-item{
-    padding: 16px;
-}
-.header-btn-box{
-    float: right;
+    flex-direction: column;
 }
 
+/* header - login*/
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+}
+.loginbar-item{
+    padding: 8px 8px;
+    font-size: 11px;
+}
+.loginbar-item a:hover{
+    border-bottom: 1px solid #7c8082;
+}
 
-.mainback{
-    background-image: 'https://www.modusign.co.kr/image/back/back-main.jpg';
+/* header - menu */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-menu{
+    margin-bottom: 0px;
+}
+.logo{
+    height: 60px;
+}
+.header-menu-item:hover{
+    cursor: pointer;
+    color:#0076C0;
+    border-bottom: 2px solid #0076C0;
+}
+/* 메뉴 변경 */
+@media (max-width:767px){
+    .navbar{
+        display: block;
+    }
+    .header-menu{
+        display: block;
+    }
+    .header-menu-item{
+        text-align: start;
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #eee;
+    }
+    .header-menu-item:hover{
+        cursor: pointer;
+        color:#0076C0;
+        border-bottom: 1px solid #0076C0;
+    }
+}
+@media (min-width: 768px){
+    .header-menu-item{
+        align-self: flex-end;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 2px solid white;
+    }
+}
+@media (min-width: 1024px){
+    .header-menu-item{
+        align-self: flex-end;
+        padding: 16px;
+        font-size: 14px;
+        border-bottom: 2px solid white;
+    }
+}
+
+/* section - banner */
+.section-banner {
+    width: 100%;
+    height: 480px;
+    background-repeat: no-repeat ;
+    background-image: url('https://d2gd6pc034wcta.cloudfront.net/contest/42/e04ed392bc207f9f89d461842d85aa8006b607b1.jpg');
+    /* 사진의 초점이 어디인지 정해주고 길이가짧은곳에 맞춤 */
+    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* section - text */
+.section-text{
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* section - info */
+.section-info{
+    padding: 60px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.info-group-text {
+    border: solid 1px #555;
+}
+@media (min-width:768px){
+    .info-group{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .info-group-item{
+        width: 25%;
+        box-sizing: border-box;
+        padding: 0px 10px;
+    }
+    .info-count{
+        font-size: 42px;
+        line-height: 48px;
+        color: #fff;
+    }
+    .info-count-title{
+        color: #bbb;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767px){
+    .info-group{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .info-group-item{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+    }
+    .info-count{
+        font-size: 30px;
+        line-height: 48px;
+        color: #fff;
+    }
+    .info-count-title{
+        color: #bbb;
+        font-size: 13px;
+    }
 }
